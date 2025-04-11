@@ -1,8 +1,148 @@
-@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #ffc017;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  border-bottom: 1px solid #191919;
+}
+
+header div {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #191919;
+  font-size: 0.7rem;
+}
+
+nav a:last-of-type {
+  background-color: #191919;
+  color: #fff;
+  padding: 0.4rem 0.7rem;
+  border-radius: 20px;
+  border: none;
+}
+
+.hero {
+  background-color: #ffc017;
+  height: 80vh;
+  border-bottom: 1px solid #191919;
+  display: flex;
+  justify-content: center;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+}
+
+h1 {
+  font-family: "Spectral", sans;
+  font-size: 6rem;
+}
+
+.hero div p {
+  margin-top: 2rem;
+}
+
+.hero div button {
+  margin-top: 2rem;
+  background-color: #191919;
+  color: #fff;
+  padding: 0.4rem 0.7rem;
+  border-radius: 20px;
+  border: none;
+  width: 10rem;
+}
+
+#m {
+  position: absolute;
+  right: 0;
+}
+
+.trendContainer {
+  margin-top: 2rem;
+  border-bottom: 1px solid #e1e0e0;
+  display: flex;
+  justify-content: center;
+}
+
+.trending {
+  width: 80%;
+}
+
+.trendingTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.singleTrends {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trend {
+  width: 33%;
+  display: flex;
+  gap: 1rem;
+}
+
+.trendNumber {
+  color: #e1e0e0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.trendingAuthor {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.trendingAuthor img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.trendText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.trendText p:first-of-type {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.trendText p {
+  font-size: 0.7rem;
 }
 
 /* colors
