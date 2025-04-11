@@ -281,14 +281,7 @@ h1 {
   margin: 1rem;
 }
 
-/* 0px fino a 575px ==> mobile
-576px fino a 767px ==> tablet
-768px fino a 991px ==> medium
-992px fino a 1199px ==> large
-1200px fino a 1399px ==> x-large
-1400px fino a Infinito ==> xx-large */
-
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 575px) {
   header > div > nav > a:nth-of-type(1),
   a:nth-of-type(2),
   a:nth-of-type(3) {
@@ -318,7 +311,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 575px) and (max-width: 800px) {
   #m {
     display: none;
   }
