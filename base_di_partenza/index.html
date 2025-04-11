@@ -19,7 +19,7 @@
                 <a href="#">Membership</a>
                 <a href="#">Write</a>
                 <a href="#">Sign In</a>
-                <a href="#">Get Started</a>
+                <a class="special" href="#">Get Started</a>
             </nav>
         </div>
     </header>
@@ -278,7 +278,24 @@
         </div>
     </div>
 
+    <script>
+        const hero = document.getElementsByClassName("hero")[0]
+        heightForChange = hero.offsetHeight - 100
 
+        window.addEventListener("scroll", () => {
+            const header = document.getElementsByTagName("header")[0];
+            const special = document.querySelector(".special")
+
+            if (window.scrollY > heightForChange) {
+                header.classList.add("headerChange")
+                special.classList.add("specialChange")
+            } else {
+                header.classList.remove("headerChange")
+                special.classList.remove("specialChange")
+            }
+        });
+
+    </script>
 </body>
 
 </html>
