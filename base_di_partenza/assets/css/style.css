@@ -218,4 +218,35 @@ h1 {
 .sidebar {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.topHalf {
+  width: 90%;
+}
+
+.topHalf h3 {
+  margin-bottom: 1rem;
+}
+
+.topHalf button {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid gray;
+  color: gray;
+  background-color: #fff;
+  margin-block: 0.2rem;
+}
+
+.lowerHalf {
+  width: 90%;
+  border-top: 1px solid #e1e0e0;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  line-height: 2rem;
+}
+
+.lowerHalf a {
+  color: gray;
+  text-decoration: none;
+  margin: 1rem;
 }
