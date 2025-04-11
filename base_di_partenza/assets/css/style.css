@@ -151,7 +151,26 @@ h1 {
   font-weight: 300;
 }
 
-/* colors
-#ffc017
-#191919
-#1a8917 */
+.articles {
+  display: flex;
+  justify-content: center;
+}
+
+#newsAndSidebar {
+  width: 80%;
+  display: flex;
+}
+
+.singleArticle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.singleArticle img {
+  width: 20%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
