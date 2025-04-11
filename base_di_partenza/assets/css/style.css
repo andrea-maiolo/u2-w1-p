@@ -185,6 +185,12 @@ h1 {
   width: 80%;
   display: flex;
   margin-top: 4rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.news {
+  flex: 1;
 }
 
 .singleArticle {
@@ -243,10 +249,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.topHalf {
-  width: 90%;
+  position: sticky;
+  top: 12vh;
+  align-self: flex-start;
+  width: 30%;
 }
 
 .topHalf h3 {
@@ -263,7 +269,6 @@ h1 {
 }
 
 .lowerHalf {
-  width: 90%;
   border-top: 1px solid #e1e0e0;
   margin-top: 1rem;
   padding-top: 1rem;
@@ -274,4 +279,60 @@ h1 {
   color: gray;
   text-decoration: none;
   margin: 1rem;
+}
+
+/* 0px fino a 575px ==> mobile
+576px fino a 767px ==> tablet
+768px fino a 991px ==> medium
+992px fino a 1199px ==> large
+1200px fino a 1399px ==> x-large
+1400px fino a Infinito ==> xx-large */
+
+@media screen and (min-width: 0px) {
+  header > div > nav > a:nth-of-type(1),
+  a:nth-of-type(2),
+  a:nth-of-type(3) {
+    display: none;
+  }
+
+  #m {
+    display: none;
+  }
+
+  .trend {
+    width: unset;
+  }
+
+  #newsAndSidebar {
+    flex-direction: column-reverse;
+  }
+
+  .articleImg {
+    object-fit: cover;
+    width: 22%;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: inherit;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  #m {
+    display: none;
+  }
+
+  .trend {
+    width: 50%;
+  }
+
+  #newsAndSidebar {
+    flex-direction: column-reverse;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: inherit;
+  }
 }
