@@ -130,8 +130,14 @@ h1 {
   width: 20px;
 }
 
-.trendingAuthor h3 {
+.trendText p {
   font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.trendingAuthor p {
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 .trendText {
@@ -140,15 +146,10 @@ h1 {
   align-items: flex-start;
 }
 
-.trendText p:first-of-type {
+.trendText h4 {
   font-weight: 700;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-}
-
-.trendText p {
-  font-size: 0.7rem;
-  font-weight: 300;
 }
 
 .articles {
@@ -159,15 +160,59 @@ h1 {
 #newsAndSidebar {
   width: 80%;
   display: flex;
+  margin-top: 4rem;
 }
 
 .singleArticle {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-.singleArticle img {
-  width: 20%;
+.articleImg {
+  width: 30%;
+  margin-left: 1rem;
+}
+
+.articleAuthor {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.authorPic {
+  width: 20px;
+  border-radius: 50%;
+}
+
+.articleText h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+  color: gray;
+}
+
+.info {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+}
+
+.category {
+  border-radius: 20px;
+  background-color: #ece9e9;
+  padding: 0 0.3rem;
+  color: gray;
+}
+
+.info img {
+  width: 20px;
 }
 
 .sidebar {
